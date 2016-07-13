@@ -1,9 +1,9 @@
 'use strict';
 
-let cxComponent= require('complex-engine-component');
-let Physics = require('physicsjs');
+import cxComponent from 'complex-engine-component';
+import Physics from 'physicsjs';
 
-module.exports = class cxPhysicsJsComponent extends cxComponent{
+export default class cxPhysicsJsComponent extends cxComponent{
     /**
      * Physic component
      * @param  {String} type PhysicJS body type

@@ -1,6 +1,6 @@
 {
   "name": "complex-physicsjs",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Faebeee",
   "description": "Physicsjs implementation for complex-engine",
   "repository": {
@@ -10,14 +10,8 @@
   "main": "module.js",
   "dependencies": {
     "complex-engine": "^2.0.2",
+    "complex-engine-component": "^1.0.0",
     "physicsjs": "^0.7.0"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-jsdoc3": "^0.3.0"
-  },
-  "scripts": {
-    "doc": "gulp doc"
   },
   "license": "ISC"
 }

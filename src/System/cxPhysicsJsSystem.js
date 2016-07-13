@@ -1,9 +1,9 @@
 'use strict';
 
-let cxVoidSystem = require('complex-engine-system').cxVoidSystem;
-let Physics = require('physicsjs')
+import {cxVoidSystem} from 'complex-engine-system';
+import Physics from 'physicsjs';
 
-class cxPhysicsJsSystem extends cxVoidSystem
+export default class cxPhysicsJsSystem extends cxVoidSystem
 {
     /**
      * Physic update system
@@ -29,6 +29,10 @@ class cxPhysicsJsSystem extends cxVoidSystem
         Physics.util.ticker.start();
     }
 
+    /**
+     * Called when a new entity is added to the cxWorld object
+     * @param cxEntity cxEntity
+     */
     added( cxEntity ){
         let comp = cxEntity.getComponent('cx.physicsjs.component');
 
@@ -41,5 +45,3 @@ class cxPhysicsJsSystem extends cxVoidSystem
     {
     }
 }
-
-module.exports = cxPhysicsJsSystem;
