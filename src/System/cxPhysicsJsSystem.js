@@ -1,9 +1,9 @@
 'use strict';
 
-import {cxVoidSystem} from 'complex-engine-system';
-import Physics from 'physicsjs';
+let cxVoidSystem = require('complex-engine').cxVoidSystem;
+let Physics = require('physicsjs');
 
-export default class cxPhysicsJsSystem extends cxVoidSystem
+module.exports = cxPhysicsJsSystem extends cxVoidSystem
 {
     /**
      * Physic update system

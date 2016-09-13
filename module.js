@@ -1,7 +1,6 @@
 'use strict';
 
-import cxPhysicsJsSystem from './src/System/cxPhysicsJsSystem';
-import cxPhysicsJsComponent from './src/Component/cxPhysicsJsComponent';
-
- export cxPhysicsJsSystem;
- export cxPhysicsJsComponent;
+module.exports = {
+    cxPhysicsJsSystem : require('./src/System/cxPhysicsJsSystem'),
+    cxPhysicsJsComponent : require('./src/Component/cxPhysicsJsComponent')
+};

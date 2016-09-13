@@ -1,6 +1,6 @@
 {
   "name": "complex-physicsjs",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Faebeee",
   "description": "Physicsjs implementation for complex-engine",
   "repository": {
@@ -9,8 +9,7 @@
   },
   "main": "module.js",
   "dependencies": {
-    "complex-engine": "^2.0.2",
-    "complex-engine-component": "^1.0.0",
+     "complex-engine" : "^3.2.1",
     "physicsjs": "^0.7.0"
   },
   "license": "ISC"
