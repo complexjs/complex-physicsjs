@@ -14,6 +14,11 @@ module.exports = class cxPhysicsJsSystem extends cxVoidSystem
     constructor( fps, ipf, behaviors ){
         super();
         this.tag = 'cx.physicsjs.system';
+
+        behaviors = behaviors || [];       
+        fps = fps || 30;
+        ipf = ipf || 4;
+
         this._world = Physics({
             timestep : fps,
             maxIPF: ipf,
