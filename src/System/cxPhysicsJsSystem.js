@@ -40,10 +40,9 @@ module.exports = class cxPhysicsJsSystem extends cxVoidSystem
      * @param cxEntity cxEntity
      */
     added( cxEntity ){
-        let comp = cxEntity.getComponent('cx.physicsjs.component');
-
-        if(comp){
-            this._world.add(comp.body);
+        let comps = cxEntity.getComponents('cx.physicsjs.component');
+        for (let i = 0; i < comps.length; i++){
+            this._world.add(comps[i].body);
         }
     }
 

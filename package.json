@@ -1,6 +1,6 @@
 {
   "name": "complex-physicsjs",
-  "version": "2.0.3",
+  "version": "3.0.0",
   "author": "Faebeee",
   "description": "Physicsjs implementation for complex-engine",
   "repository": {
@@ -9,8 +9,15 @@
   },
   "main": "module.js",
   "dependencies": {
-     "complex-engine" : "^3.2.1",
+    "complex-engine": "^4.0.0",
     "physicsjs": "^0.7.0"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.1.2",
+    "unit.js": "^2.0.0"
+  },
+  "scripts":{
+        "test" : "mocha test/Run.js"
+    }
 }
