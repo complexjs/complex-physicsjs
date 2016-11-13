@@ -3,7 +3,7 @@
 let cxVoidSystem = require('complex-engine').cxVoidSystem;
 let Physics = require('physicsjs');
 
-module.exports = cxPhysicsJsSystem extends cxVoidSystem
+module.exports = class cxPhysicsJsSystem extends cxVoidSystem
 {
     /**
      * Physic update system
@@ -13,6 +13,7 @@ module.exports = cxPhysicsJsSystem extends cxVoidSystem
      */
     constructor( fps, ipf, behaviors ){
         super();
+        this.tag = 'cx.physicsjs.system';
         this._world = Physics({
             timestep : fps,
             maxIPF: ipf,
